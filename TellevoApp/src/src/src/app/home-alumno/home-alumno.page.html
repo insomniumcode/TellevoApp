@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bienvenido cr.guzmanl</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- FOTO DE PERFIL -->
+  <ion-col>
+    <div class="container">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Bienvenido cr.guzmanl</ion-label>
+      </ion-item>
+    </div>
+  </ion-col>
+  
+    <h1 class="h1-animated">BIENVENIDO CR.GUZMANL</h1>
+
+    <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div class="container">
+        <ion-toolbar>
+          <ion-buttons slot="secondary">
+            <ion-button size="large" [routerLink]="['/login']"> Cerrar Sesión </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+    </ion-row>
+  </ion-col>
+
+</ion-content>
