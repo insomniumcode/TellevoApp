@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'home-alumno',
     loadChildren: () => import('./home-alumno/home-alumno.module').then( m => m.HomeAlumnoPageModule)
+  },
+  {
+    path: 'home-alumno2',
+    loadChildren: () => import('./home-alumno2/home-alumno2.module').then( m => m.HomeAlumno2PageModule)
+  },
+  {
+    path: 'home-alumno3',
+    loadChildren: () => import('./home-alumno3/home-alumno3.module').then( m => m.HomeAlumno3PageModule)
+  },
+  {
+    path: 'home-alumno4',
+    loadChildren: () => import('./home-alumno4/home-alumno4.module').then( m => m.HomeAlumno4PageModule)
   }
 ];
 

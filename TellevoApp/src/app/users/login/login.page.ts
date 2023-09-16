@@ -20,10 +20,19 @@ export class LoginPage implements OnInit {
     }
 
     validarAlumno() {
-      if (this.pass=='1234' && this.user=='cr.guzmanl' || this.pass=='1234' && this.user=='ma.lopezd') {
+      if (this.pass=='1234' && this.user=='cr.guzmanl') {
         this.router.navigate(['/home-alumno']);
-       
-      } else {
+      }else if(this.pass=='1234' && this.user=='ma.lopezd')
+      {
+        this.router.navigate(['/home-alumno2']);}
+        
+      else if (this.pass=='1234' && this.user=='davi.salazar') {
+          this.router.navigate(['/home-alumno3']);
+         
+      }else if(this.pass=='1234' && this.user=='ju.ramirez'){
+          this.router.navigate(['/home-alumno4']);
+      }
+      else {
         this.mostrarAlerta();
       }
     }
